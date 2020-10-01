@@ -4,15 +4,15 @@ Public Sub SaveAttachments(Item As Outlook.MailItem)
 If Item.Attachments.Count > 0 Then
  
 Dim objAttachments As Outlook.Attachments
-Dim lngCount As Long
+Dim lngCount As Integer
 Dim strFile As String
 Dim sFileType As String
-Dim i As Long
+  Dim i As Integer
 Dim olFrom As String
 Dim olExt As String
 
 
-'Definindo o email do remetente, extens„o do arquivo e local para salvar os anexos
+'Definindo o email do remetente, extens√£o do arquivo e local para salvar os anexos
 olFrom = "someone@email.com"
 olExt = "xlsx"
 strFolderPath = "C:\Temp\"
